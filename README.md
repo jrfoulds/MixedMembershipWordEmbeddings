@@ -33,10 +33,10 @@ java -cp java edu.umbc.MMWordEmbeddings.MMSkipGramTopicModel_MHW_mixtureOfExpert
 After running (it may take a while), this results in three files:
 
 * MMskipGramTopicModel_topicAssignments.txt, in a format similar to the input data, but which contains topic assignments for each word
-* MMskipGramTopicModel_wordTopicCountsForTopics.txt, which contains the count matrix for the topics (words by topics).  Add the smoothing hyperparameter and normalize the columns to sum to one to obtain the topics' probability distributions over words.
+* MMskipGramTopicModel_wordTopicCountsForTopics.txt, which contains the count matrix for the topics (words by topics).  Add the smoothing hyperparameter and normalize the columns to sum to one to obtain the topics' probability distributions over words
 * MMskipGramTopicModel_wordTopicCountsForWords.txt, which contains the count matrix for the words' distributions over topics (words by topics).  Add the smoothing hyperparameter and normalize the rows to sum to one to obtain the words' probability distributions over topics.
 
-Finally, the embeddings are training via NCE, implemented in python using tensorflow.  Edit python/mixedMembershipSkipGramPreClusteredNCE.py to select the hyperparameters for the algorithm, and its input files (the file encoding the documents, and the corresponding MMskipGramTopicModel_topicAssignments.txt).  Then, run the python script:
+Finally, the embeddings are training via NCE, implemented in python using tensorflow.  Edit python/mixedMembershipSkipGramPreClusteredNCE.py to select the hyperparameters for the algorithm, and its input files (i.e. the file encoding the documents which was used to train the MMSG topic model, and the corresponding MMskipGramTopicModel_topicAssignments.txt which the MMSG topic model produced).  Then, run the python script:
 ```bash
 python python/mixedMembershipSkipGramPreClusteredNCE.py
 ```
