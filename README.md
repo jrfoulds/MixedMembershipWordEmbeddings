@@ -7,8 +7,9 @@ Code implementing the algorithms in: [J. R. Foulds. Mixed Membership Word Embedd
 * Python
 * Tensorflow
 * Java
+* Matlab (optional)
 
-It should work under windows and linux.  I haven't tested it on MacOS but the code is implemented using cross-platform languages, so I expect it would work there as well.
+The code should work under windows and linux.  I haven't tested this on MacOS but the code is implemented using cross-platform languages, so I expect it would work there as well.
 
 ## Data format
 
@@ -48,6 +49,8 @@ This outputs three files:
 * MMnormalizedEmbeddings.txt, the topic embeddings, normalized to unit length (topics by dimensions). 
 
 Example scripts which run the above on the NIPS corpus are provided in NIPS_demo.sh (bash) and NIPS_demo.bat (windows).
+
+In the matlab folder, scripts are provided for recovering normalized topics and distributions over topics, and for reporting the top words in the topics.  These methods could easily be re-implemented in any other language, if you do not have matlab.  After running the java and python scripts, try running matlab/results_demo.m.
 
 ## Author
 
