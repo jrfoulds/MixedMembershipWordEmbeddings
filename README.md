@@ -50,7 +50,7 @@ This outputs three files:
 
 Example scripts which run the above on the NIPS corpus are provided in NIPS_demo.sh (bash) and NIPS_demo.bat (windows).
 
-In the matlab folder, scripts are provided for recovering normalized topics and distributions over topics, and for reporting the top words in the topics.  These methods could easily be re-implemented in any other language, if you do not have matlab.  After running the java and python scripts, try running matlab/results_demo.m.
+In the matlab folder, scripts are provided for recovering normalized topics and distributions over topics, and for reporting the top words in the topics.  These methods could easily be re-implemented in any other language, if you do not have matlab.  After running the java and python scripts, try running matlab/results_demo.m (after adding the matlab folder to matlab's path).
 
 ## Author
 
